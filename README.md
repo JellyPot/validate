@@ -2,6 +2,8 @@
 
 Stačí připojit skript do stránky a zavolat funkci `validate()` na jQuery objekt formuláře. Třídy s výsledkem validace jsou přidělovány automaticky rodiči input pole.
 
+Validovány jsou pouze viditelná pole, tedy taková, která jsou vybrána selektorem `$(".va:visible")`.
+
 ## Příklad
 
 *.aspx
