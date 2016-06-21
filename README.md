@@ -1,8 +1,8 @@
-# Plugin pro validaci formuláøù pomocí JS
+# Plugin pro validaci formulÃ¡Å™Å¯ pomocÃ­ JS
 
-Staèí pøipojit skript do stránky a zavolat funkci `validate()` na jQuery objekt formuláøe. Tøídy s vısledkem validace jsou pøidìlovány automaticky rodièi input pole.
+StaÄÃ­ pÅ™ipojit skript do strÃ¡nky a zavolat funkci `validate()` na jQuery objekt formulÃ¡Å™e. TÅ™Ã­dy s vÃ½sledkem validace jsou pÅ™idÄ›lovÃ¡ny automaticky rodiÄi input pole.
 
-## Pøíklad
+## PÅ™Ã­klad
 
 *.aspx
 
@@ -18,23 +18,23 @@ Staèí pøipojit skript do stránky a zavolat funkci `validate()` na jQuery objekt 
     <f:EmailForm runat="server" id="comment" targetCollection=".comment" emailTemplate="Comment/sent">
         <formTemplate>
             <label>
-                <span class="caption">Jméno</span>
+                <span class="caption">JmÃ©no</span>
                 <f:input runat="server" class="va vaS" id="name" validateas="NotEmpty" targetField="name" />
-                <p class="msg">Jméno je povinné.</p>
+                <p class="msg">JmÃ©no je povinnÃ©.</p>
             </label>
             <label>
                 <span class="caption">Email</span>
                 <f:input runat="server" class="va vaE" id="email" validateas="Email" targetField="email" />
-                <p class="msg">Email je povinnı.</p>
+                <p class="msg">Email je povinnÃ½.</p>
             </label>
             <label>
                 <span class="caption">Telefon</span>
                 <f:input runat="server" class="va vaT vaAE" id="phone" validateas="NotEmpty" placeholder="" targetField="phone" />
-                <p class="msg">Telefonní èíslo je zadáno nesprávnì.</p>
+                <p class="msg">TelefonnÃ­ ÄÃ­slo je zadÃ¡no nesprÃ¡vnÄ›.</p>
             </label>
         </formTemplate>
         <sentTemplate>
-            <p>Odesláno!</p>
+            <p>OdeslÃ¡no!</p>
         </sentTemplate>
     </f:EmailForm>
 </form>
