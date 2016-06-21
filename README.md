@@ -29,7 +29,7 @@ Stačí připojit skript do stránky a zavolat funkci `validate()` na jQuery obj
             </label>
             <label>
                 <span class="caption">Telefon</span>
-                <f:input runat="server" class="va vaT vaAE" id="phone" validateas="NotEmpty" placeholder="" targetField="phone" />
+                <f:input runat="server" class="va vaT vaAE" id="phone" validateas="TelefonOrEmpty" targetField="phone" />
                 <p class="msg">Telefonní číslo je zadáno nesprávně.</p>
             </label>
         </formTemplate>
