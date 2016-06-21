@@ -1,4 +1,4 @@
-# Plugin pro validaci formulářů pomocí JS
+# Plugin pro validaci formulářů pomocí jQuery
 
 Input pole, které má být validováno, má třídu `va` a dále další třídu podle toho, jak má být obsah validován. Výpis tříd je uveden v souboru `validate.js`. Tlačítko pro odeslání formuláře musí mít třídu `next`. Validována jsou pouze viditelná pole, tedy taková, která jsou vybrána selektorem `$(".va:visible")`.
 
