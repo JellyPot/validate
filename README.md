@@ -1,8 +1,8 @@
 # Plugin pro validaci formulářů pomocí JS
 
-Stačí připojit skript do stránky a zavolat funkci `validate()` na jQuery objekt formuláře. Třídy s výsledkem validace jsou přidělovány automaticky rodiči input pole.
+Input pole, které má být validováno, má třídu `va` a dále další třídu podle toho, jak má být obsah validován. Výpis tříd je uveden v souboru `validate.js`. Tlačítko pro odeslání formuláře musí mít třídu `next`. Validována jsou pouze viditelná pole, tedy taková, která jsou vybrána selektorem `$(".va:visible")`.
 
-Validována jsou pouze viditelná pole, tedy taková, která jsou vybrána selektorem `$(".va:visible")`.
+Stačí připojit skript do stránky a zavolat funkci `validate()` na jQuery objekt formuláře. Třídy s výsledkem validace jsou přidělovány automaticky rodiči input pole.
 
 ## Příklad
 
@@ -34,6 +34,7 @@ Validována jsou pouze viditelná pole, tedy taková, která jsou vybrána selek
                 <f:input runat="server" class="va vaT vaAE" id="phone" validateas="TelefonOrEmpty" targetField="phone" />
                 <p class="msg">Telefonní číslo je zadáno nesprávně.</p>
             </label>
+            <f:sendButton runat="server" textValue="Odeslat" class="next" />
         </formTemplate>
         <sentTemplate>
             <p>Odesláno!</p>
